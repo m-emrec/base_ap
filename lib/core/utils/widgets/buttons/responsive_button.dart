@@ -50,16 +50,8 @@ class ResponsiveElevatedButton extends StatefulWidget {
       _ResponsiveElevatedButtonState();
 }
 
-class _ResponsiveElevatedButtonState extends State<ResponsiveElevatedButton> {
-  bool? isLoading;
-
-  // ignore: avoid_positional_boolean_parameters
-  void setLoadingState(bool val) {
-    setState(() {
-      isLoading = val;
-    });
-  }
-
+class _ResponsiveElevatedButtonState extends State<ResponsiveElevatedButton>
+    with _ButtonLoadingState {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -76,14 +68,12 @@ class _ResponsiveElevatedButtonState extends State<ResponsiveElevatedButton> {
                     ? AppColors.primaryBlue
                     : AppColors.secondaryTeal,
               ),
-              onPressed: isLoading ?? false
+              onPressed: isLoading
                   ? null
-                  : () => _ManageLoadingState.setLoadingState(
-                        context: context,
-                        setState: setLoadingState,
+                  : () => setLoadingState(
                         func: widget.onPressed,
                       ),
-              child: isLoading ?? false
+              child: isLoading
                   ? const SizedBox(
                       height: 24,
                       width: 24,

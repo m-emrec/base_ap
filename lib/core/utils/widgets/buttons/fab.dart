@@ -38,27 +38,16 @@ class FAB extends StatefulWidget {
   State<FAB> createState() => _FABState();
 }
 
-class _FABState extends State<FAB> {
-  bool? isLoading;
-
-  // ignore: avoid_positional_boolean_parameters
-  void setLoadingState(bool? val) {
-    setState(() {
-      isLoading = val;
-    });
-  }
-
+class _FABState extends State<FAB> with _ButtonLoadingState {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      onPressed: isLoading ?? false
+      onPressed: isLoading
           ? null
-          : () => _ManageLoadingState.setLoadingState(
-                context: context,
-                setState: setLoadingState,
+          : () => setLoadingState(
                 func: widget.onPressed,
               ),
-      child: isLoading ?? false
+      child: isLoading
           ? const SizedBox(
               height: 32,
               width: 32,

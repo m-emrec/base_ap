@@ -55,15 +55,8 @@ class ResponsiveOutlinedButton extends StatefulWidget {
       _ResponsiveOutlinedButtonState();
 }
 
-class _ResponsiveOutlinedButtonState extends State<ResponsiveOutlinedButton> {
-  bool? isLoading;
-
-  void setLoadingState(bool val) {
-    setState(() {
-      isLoading = val;
-    });
-  }
-
+class _ResponsiveOutlinedButtonState extends State<ResponsiveOutlinedButton>
+    with _ButtonLoadingState {
   @override
   Widget build(BuildContext context) {
     assert(
@@ -73,14 +66,12 @@ class _ResponsiveOutlinedButtonState extends State<ResponsiveOutlinedButton> {
     return Expanded(
       child: OutlinedButton(
         style: widget.style,
-        onPressed: isLoading ?? false
+        onPressed: isLoading
             ? null
-            : () => _ManageLoadingState.setLoadingState(
-                  context: context,
-                  setState: setLoadingState,
+            : () => setLoadingState(
                   func: widget.onPressed,
                 ),
-        child: isLoading ?? false
+        child: isLoading
             ? const SizedBox(
                 height: 32,
                 width: 32,
