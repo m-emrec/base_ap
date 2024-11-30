@@ -1,4 +1,3 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import '../../../core/resources/data_state.dart';
 import '../../../core/resources/firebase_utils.dart';
 import '../model/credentials.dart';
@@ -6,7 +5,7 @@ import '../model/credentials.dart';
 import 'google_sign_in_service.dart';
 
 /// A service class that handles authentication operations using Firebase.
-class AuthService with FirebaseUtils {
+class AuthService extends FirebaseUtils {
   /// Signs up a user with email and password.
   ///
   /// Takes [credentials] which includes the user's email and password.
