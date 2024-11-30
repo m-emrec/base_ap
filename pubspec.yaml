@@ -10,8 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-### Firebase
-   # For Firebase initialization. -> https://pub.dev/packages/firebase_core
+  cupertino_icons: ^1.0.8
+
+  ### Firebase
+  # For Firebase initialization. -> https://pub.dev/packages/firebase_core
   firebase_core: ^3.1.1
   # For storing storing nfc tag details. -> https://pub.dev/packages/firebase_database
   firebase_database: ^11.1.6
@@ -21,14 +23,18 @@ dependencies:
   firebase_auth: ^5.3.1
   # For storing images. -> https://pub.dev/packages/firebase_storage
   firebase_storage: 
+
   ## State management -> https://pub.dev/packages/flutter_riverpod
   flutter_riverpod: ^2.5.1
+
   # for easy debugging -> https://pub.dev/packages/logger
   logger: ^2.3.0
+
   # navigation
   # for navigation -> https://pub.dev/packages/go_router
   go_router: ^14.3.0
-#  UI related packages
+
+  # UI related packages
   #  https://pub.dev/packages/gap
   gap: ^3.0.1
   # for toast messages -> https://pub.dev/packages/toastification
@@ -39,7 +45,9 @@ dependencies:
   google_fonts: ^6.2.1
   # for lottie animations -> https://pub.dev/packages/lottie
   lottie: ^3.1.2
-  cupertino_icons: ^1.0.8
+  # for markdown support -> https://pub.dev/packages/flutter_markdown 
+  flutter_markdown: ^0.7.3+2
+  
   # for email validation -> https://pub.dev/packages/email_validator
   email_validator: ^3.0.0
   # for google sign in -> https://pub.dev/packages/google_sign_in
@@ -50,19 +58,13 @@ dependencies:
   cached_network_image: ^3.4.1
   # for localizations -> https://pub.dev/packages/easy_localization
   easy_localization: ^3.0.7
-# for markdown support -> https://pub.dev/packages/flutter_markdown 
-  flutter_markdown: ^0.7.3+2
 
 
 dev_dependencies:
+  flutter_lints: ^4.0.0
   very_good_analysis: ^6.0.0
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0
-
-
-
-
 flutter:
   uses-material-design: true
   assets:

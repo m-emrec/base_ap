@@ -67,7 +67,8 @@ mixin TextFieldStateMixin<T extends StatefulWidget> on State<T> {
   /// and returns the color.
   Color? setColorState() {
     Color? stateColor;
-    bool validated = validator!(controller?.text) == null;
+    // ignore: omit_local_variable_types
+    final bool validated = validator!(controller?.text) == null;
     if (validated) {
       /// if the TextField is validated, it will return the success color.
       stateColor = AppColors.accentSuccess[70];
