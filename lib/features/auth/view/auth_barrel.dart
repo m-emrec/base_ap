@@ -8,7 +8,6 @@ export 'package:go_router/go_router.dart';
 
 export '../../../config/localization/lang/locale_keys.g.dart';
 export '../../../config/routes/router.dart';
-export '../../../core/constants/app_assets.dart';
 export '../../../core/constants/app_paddings.dart';
 export '../../../core/extensions/context_extension.dart';
 export '../../../core/utils/widgets/buttons/buttons_import.dart';

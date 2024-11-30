@@ -1,10 +1,9 @@
 import 'dart:async';
 
+import 'package:base_ap/core/constants/generated/assets.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
-
-import '../../core/constants/app_assets.dart';
 
 ///
 class SplashScreen extends StatelessWidget {
@@ -29,7 +28,7 @@ class SplashScreen extends StatelessWidget {
     );
     return Scaffold(
       body: Center(
-        child: Lottie.asset(AppAssets.splashAni, repeat: false),
+        child: Lottie.asset(Assets.animations.aniSplash, repeat: false),
       ),
     );
   }

@@ -1,3 +1,4 @@
+import 'package:base_ap/core/constants/generated/assets.gen.dart';
 import 'package:flutter/material.dart';
 
 import 'auth_barrel.dart';
@@ -23,7 +24,7 @@ class _SignUpState extends ConsumerState<SignUp> with SignUpMixin {
         padding: const AppPadding.horizontalMSymmetric(),
         child: Column(
           children: [
-            Image.asset(AppAssets.logoPath),
+            Image.asset(Assets.images.logo.path),
 
             const Spacer(
               flex: 3,

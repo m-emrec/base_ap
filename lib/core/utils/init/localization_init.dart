@@ -10,7 +10,7 @@ class _LocalizationInit {
     // Locale('de'),
     // Locale('ru'),
   ];
-  static String path = 'lib/core/assets/translations';
+  static String path = 'assets/translations';
   static Locale fallbackLocale = const Locale('en', 'US');
 
   Future<void> initLocale() async {

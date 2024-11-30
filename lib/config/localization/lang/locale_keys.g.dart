@@ -1,10 +1,5 @@
 // DO NOT EDIT. This is code generated via package:easy_localization/generate.dart
 
-// ignore_for_file: lines_longer_than_80_chars, public_member_api_docs, constant_identifier_names
-
-/// This abstract class `LocaleKeys` is used to define the keys for localization.
-/// It serves as a central place to manage all the localization keys used in the application.
-/// The keys defined in this class will be used to fetch the localized strings from the localization files.
 abstract class LocaleKeys {
   static const errors_The_email_address_is_already_in_use_by_another_account =
       'errors.The_email_address_is_already_in_use_by_another_account';

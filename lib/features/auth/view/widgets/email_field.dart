@@ -3,7 +3,7 @@ import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../config/localization/lang/locale_keys.g.dart';
-import '../../../../core/constants/app_assets.dart';
+import '../../../../core/constants/generated/assets.gen.dart';
 import '../../../../core/utils/mixins/text_field_state_mixin.dart';
 import '../../../../core/utils/widgets/custom_text_field.dart';
 
@@ -72,7 +72,7 @@ class _EmailFieldState extends State<EmailField> with TextFieldStateMixin {
       controller: widget.controller,
       label: tr(LocaleKeys.auth_email),
       prefixIcon: Image.asset(
-        AppAssets.emailFieldIconPath,
+        Assets.icons.icEmail.path,
       ),
       validator: validator,
       keyboardType: TextInputType.emailAddress,

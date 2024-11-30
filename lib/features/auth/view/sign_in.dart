@@ -1,3 +1,4 @@
+import 'package:base_ap/core/constants/generated/assets.gen.dart';
 import 'package:flutter/material.dart';
 
 import '../mixins/sign_in_mixin.dart';
@@ -22,7 +23,7 @@ class _SignInState extends ConsumerState<SignIn> with SignInMixin {
         padding: const AppPadding.horizontalMSymmetric(),
         child: Column(
           children: [
-            Image.asset(AppAssets.logoPath),
+            Image.asset(Assets.images.logo.path),
 
             const Spacer(
               flex: 3,

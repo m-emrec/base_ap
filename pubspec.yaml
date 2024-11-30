@@ -63,12 +63,19 @@ dependencies:
 dev_dependencies:
   flutter_lints: ^4.0.0
   very_good_analysis: ^6.0.0
+  flutter_gen_runner:
+  build_runner:
   flutter_test:
     sdk: flutter
+
+  
+flutter_gen:
+  output:  lib/core/constants/generated/
+
 flutter:
   uses-material-design: true
   assets:
-    - lib/core/assets/icons/
-    - lib/core/assets/images/
-    - lib/core/assets/animations/
-    - lib/core/assets/translations/
+    - assets/icons/
+    - assets/images/
+    - assets/animations/
+    - assets/translations/
