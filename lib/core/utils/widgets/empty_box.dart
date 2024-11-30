@@ -22,6 +22,7 @@ class EmptyBox extends Gap {
   /// Each named constructor uses predefined padding values from the `AppPaddings` class.
   /// Creates an empty box with the specified main axis extent.
   ///
+  // ignore: unused_element
   const EmptyBox._(super.mainAxisExtent);
 
   /// Creates an empty box with an extra extra small gap.

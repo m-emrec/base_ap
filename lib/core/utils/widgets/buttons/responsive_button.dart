@@ -1,4 +1,4 @@
-part of buttons_import;
+part of 'buttons_import.dart';
 
 // ignore: public_member_api_docs
 class ResponsiveElevatedButton extends StatefulWidget {
