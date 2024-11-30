@@ -10,6 +10,8 @@
 analyzer:
   errors:
     always_use_package_imports: ignore
+    comment_references: ignore
+    flutter_style_todos: ignore 
     lines_longer_than_80_chars: ignore
     prefer_single_quotes: ignore
     use_string_in_part_of_directives: ignore

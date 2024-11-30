@@ -6,7 +6,6 @@ import '../../features/auth/view/sign_up.dart';
 
 import '../../features/home/view/home.dart';
 import '../../features/splash/splash_screen.dart';
-import '../../main.dart';
 import 'auth_checker.dart';
 
 /// This enum contains the name of the routes in the app
@@ -59,7 +58,6 @@ final class AppRouter {
         redirect: _authChangeNotifier.authChecker,
         path: '/',
         builder: (context, state) => const Home(),
-        routes: const [],
       ),
 
       //* [SignUp] page

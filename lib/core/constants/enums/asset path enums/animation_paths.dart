@@ -7,9 +7,8 @@ enum _AnimationPaths {
   splash("${_rootAniPath}ani_splash.json"),
   ;
 
+  const _AnimationPaths(this.path);
   static const String _rootAniPath = "lib/core/assets/animations/";
 
   final String path;
-
-  const _AnimationPaths(this.path);
 }

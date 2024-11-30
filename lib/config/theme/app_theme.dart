@@ -182,7 +182,7 @@ class AppTheme {
         ),
       ),
       floatingLabelBehavior: FloatingLabelBehavior.never,
-      contentPadding: EdgeInsets.symmetric(
+      contentPadding: const EdgeInsets.symmetric(
         vertical: AppPadding.xsPadding,
         horizontal: AppPadding.xsPadding,
       ),
@@ -221,7 +221,7 @@ class AppTheme {
         // Colors
         backgroundColor: AppColors.neutralBackgroundLight,
         foregroundColor: AppColors.secondaryTeal,
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
           horizontal: AppPadding.mPadding,
           vertical: AppPadding.sPadding,
         ),
@@ -239,7 +239,7 @@ class AppTheme {
     return ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         foregroundColor: AppColors.primaryBlue[0],
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
           horizontal: AppPadding.mPadding,
           vertical: AppPadding.sPadding,
         ),

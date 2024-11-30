@@ -1,13 +1,16 @@
+// ignore_for_file: omit_local_variable_types
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import '../../../../config/localization/lang/locale_keys.g.dart';
-import '../../../../core/constants/app_paddings.dart';
 
+import '../../../../config/localization/lang/locale_keys.g.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/constants/app_paddings.dart';
 
 /// This divider used on SignIn and SignUp pages
 class OrDivider extends StatelessWidget {
+  /// This divider used on SignIn and SignUp pages
   const OrDivider({
     super.key,
   });
@@ -22,9 +25,9 @@ class OrDivider extends StatelessWidget {
           Alignment.centerRight,
           Alignment.centerLeft,
         ),
-        Gap(AppPadding.xxsPadding),
+        const Gap(AppPadding.xxsPadding),
         Text(or),
-        Gap(AppPadding.xxsPadding),
+        const Gap(AppPadding.xxsPadding),
         _divider(Alignment.centerLeft, Alignment.centerRight),
       ],
     );

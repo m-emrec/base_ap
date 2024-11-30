@@ -6,9 +6,8 @@ enum _IconPaths {
   passwordIcon("${_rootIconPath}ic_password.png"),
   ;
 
+  const _IconPaths(this.path);
   static const String _rootIconPath = "lib/core/assets/icons/";
 
   final String path;
-
-  const _IconPaths(this.path);
 }

@@ -28,30 +28,30 @@ class EmptyBox extends Gap {
   /// Creates an empty box with an extra extra small gap.
   ///
   /// The main axis extent of the empty box is `4.0`.
-  EmptyBox.xxSmallGap({super.key}) : super(AppPadding.xxsPadding);
+  const EmptyBox.xxSmallGap({super.key}) : super(AppPadding.xxsPadding);
 
   /// Creates an empty box with an extra small gap.
   ///
   /// The main axis extent of the empty box is `8.0`.
-  EmptyBox.xSmallGap({super.key}) : super(AppPadding.xsPadding);
+  const EmptyBox.xSmallGap({super.key}) : super(AppPadding.xsPadding);
 
   /// Creates an empty box with a small gap.
   ///
   /// The main axis extent of the empty box is `16.0`.
-  EmptyBox.smallGap({super.key}) : super(AppPadding.sPadding);
+  const EmptyBox.smallGap({super.key}) : super(AppPadding.sPadding);
 
   /// Creates an empty box with a medium gap.
   ///
   /// The main axis extent of the empty box is `24.0`.
-  EmptyBox.mediumGap({super.key}) : super(AppPadding.mPadding);
+  const EmptyBox.mediumGap({super.key}) : super(AppPadding.mPadding);
 
   /// Creates an empty box with a large gap.
   ///
   /// The main axis extent of the empty box is `32.0`.
-  EmptyBox.largeGap({super.key}) : super(AppPadding.lPadding);
+  const EmptyBox.largeGap({super.key}) : super(AppPadding.lPadding);
 
   /// Creates an empty box with an extra large gap.
   ///
   /// The main axis extent of the empty box is `64.0`.
-  EmptyBox.xLargeGap({super.key}) : super(AppPadding.xlPadding);
+  const EmptyBox.xLargeGap({super.key}) : super(AppPadding.xlPadding);
 }

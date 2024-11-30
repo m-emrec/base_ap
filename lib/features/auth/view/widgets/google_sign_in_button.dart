@@ -7,11 +7,13 @@ import '../../../../core/extensions/context_extension.dart';
 import '../../../../core/utils/widgets/buttons/buttons_import.dart';
 import '../../providers/provider.dart';
 
+///
 class GoogleSignInButton extends ConsumerWidget {
-  GoogleSignInButton({super.key});
+  /// GoogleSignInButton is a [ConsumerWidget] that returns a [Row] widget
+  const GoogleSignInButton({super.key});
 
   @override
-  Widget build(BuildContext context, ref) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Row(
       children: [
         ResponsiveOutlinedButton(
@@ -22,7 +24,7 @@ class GoogleSignInButton extends ConsumerWidget {
             AppAssets.googleAni,
             repeat: false,
           ),
-          onPressed: () async => await ref
+          onPressed: () async => ref
               .read(AuthProvider.authServiceViewModelProvider)
               .googleSignIn(),
         ),

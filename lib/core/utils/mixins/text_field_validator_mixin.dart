@@ -28,6 +28,7 @@ import '../../constants/app_colors.dart';
 /// - `controller`: The TextEditingController associated with the TextField.
 /// - `validator`: A function to validate the TextField's input.
 mixin TextFieldStateMixin {
+  /// TODO : Chanege this like you did with ButtonStateMixin
   /// To use this mixin you have to call this function in the ``initState()``
   void initTextFieldState({
     required Function setState,

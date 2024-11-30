@@ -1,8 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
+///
 class Home extends StatefulWidget {
+  /// Home Screen
   const Home({super.key});
 
   @override
@@ -18,7 +19,7 @@ class _HomeState extends State<Home> {
         children: [
           ElevatedButton(
             onPressed: () => FirebaseAuth.instance.signOut(),
-            child: Text('Sign Out'),
+            child: const Text('Sign Out'),
           ),
         ],
       ),
