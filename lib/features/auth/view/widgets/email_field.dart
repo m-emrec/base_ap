@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../config/localization/lang/locale_keys.g.dart';
 import '../../../../core/constants/app_assets.dart';
-import '../../../../core/utils/mixins/text_field_validator_mixin.dart';
+import '../../../../core/utils/mixins/text_field_state_mixin.dart';
 import '../../../../core/utils/widgets/custom_text_field.dart';
 
 ///
@@ -56,29 +56,19 @@ class EmailField extends StatefulWidget {
 }
 
 class _EmailFieldState extends State<EmailField> with TextFieldStateMixin {
-  final FocusNode _focusNode = FocusNode();
-
   @override
-  void initState() {
-    initTextFieldState(
-      setState: setState,
-      focusNode: _focusNode,
-      controller: widget.controller,
-      validator: validator,
-    );
-
-    super.initState();
-  }
-
-  String? validator(String? value) => EmailValidator.validate(value ?? "")
-      ? null
-      : tr(LocaleKeys.auth_validEmailError);
+  String? Function(String? p1)? get validator =>
+      (value) => EmailValidator.validate(value ?? '')
+          ? null
+          : tr(LocaleKeys.auth_validEmailError);
+  @override
+  TextEditingController get controller => widget.controller;
 
   @override
   Widget build(BuildContext context) {
     return CustomTextField(
       color: setColorState(),
-      focusNode: _focusNode,
+      focusNode: focusNode,
       controller: widget.controller,
       label: tr(LocaleKeys.auth_email),
       prefixIcon: Image.asset(

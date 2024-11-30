@@ -1,9 +1,10 @@
+import 'package:base_ap/logger.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../config/localization/lang/locale_keys.g.dart';
 import '../../../../core/constants/app_assets.dart';
-import '../../../../core/utils/mixins/text_field_validator_mixin.dart';
+import '../../../../core/utils/mixins/text_field_state_mixin.dart';
 import '../../../../core/utils/widgets/custom_text_field.dart';
 
 /// A custom password field widget that extends [StatefulWidget].
@@ -26,45 +27,21 @@ class PasswordField extends StatefulWidget {
 }
 
 class _PasswordFieldState extends State<PasswordField>
-    with TextFieldStateMixin {
+    with TextFieldStateMixin<PasswordField> {
   /// A boolean value to determine whether the password is obscured.
   bool obscured = true;
-
-  /// A [FocusNode] to manage the focus of the text field.
-  final FocusNode _focusNode = FocusNode();
-
-  @override
-  void initState() {
-    /// Initializes the state of the text field.
-    ///
-    /// This method sets up the text field state by calling [initTextFieldState]
-    /// with the necessary parameters.
-    initTextFieldState(
-      setState: setState,
-      focusNode: _focusNode,
-      controller: widget.controller,
-      validator: validator,
-    );
-
-    super.initState();
-  }
 
   /// A validator function to validate the password input.
   ///
   /// Returns an error message if the password length is less than 6 characters.
   /// Otherwise, returns null.
-  String? validator(String? value) =>
-      value!.length < 6 ? tr(LocaleKeys.auth_password_validation_error) : null;
-
   @override
-  void dispose() {
-    /// Disposes the state of the text field.
-    ///
-    /// This method cleans up the resources used by the text field by calling
-    /// [disposeTextFieldState].
-    disposeTextFieldState();
-    super.dispose();
-  }
+  String? Function(String? p1)? get validator =>
+      (value) => (value?.length ?? 0) < 6
+          ? tr(LocaleKeys.auth_password_validation_error)
+          : null;
+  @override
+  TextEditingController get controller => widget.controller;
 
   /// The label text for the password field.
   final String label = tr(LocaleKeys.auth_password);
@@ -77,7 +54,7 @@ class _PasswordFieldState extends State<PasswordField>
     /// configurations, including the password visibility toggle functionality.
     return CustomTextField(
       color: setColorState(),
-      focusNode: _focusNode,
+      focusNode: focusNode,
       obscured: obscured,
       controller: widget.controller,
       label: label,
