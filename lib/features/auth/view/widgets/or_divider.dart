@@ -22,9 +22,9 @@ class OrDivider extends StatelessWidget {
           Alignment.centerRight,
           Alignment.centerLeft,
         ),
-        Gap(AppPaddings.xxsPadding),
+        Gap(AppPadding.xxsPadding),
         Text(or),
-        Gap(AppPaddings.xxsPadding),
+        Gap(AppPadding.xxsPadding),
         _divider(Alignment.centerLeft, Alignment.centerRight),
       ],
     );

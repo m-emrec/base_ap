@@ -61,7 +61,7 @@ class ForgotPasswordSheet extends StatelessWidget {
       heightFactor: .3,
       title: forgotPassword,
       content: Padding(
-        padding: AppPaddings.authHPadding,
+        padding: const AppPadding.horizontalMSymmetric(),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           // mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -70,7 +70,7 @@ class ForgotPasswordSheet extends StatelessWidget {
               controller: _controller,
               textInputAction: TextInputAction.done,
             ),
-            MaxGap(AppPaddings.sPadding),
+            const MaxGap(AppPadding.sPadding),
             Consumer(
               builder: (context, ref, child) => ResponsiveElevatedButton(
                 onPressed: () async => onTap(context, ref),

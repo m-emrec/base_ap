@@ -183,8 +183,8 @@ class AppTheme {
       ),
       floatingLabelBehavior: FloatingLabelBehavior.never,
       contentPadding: EdgeInsets.symmetric(
-        vertical: AppPaddings.xsPadding,
-        horizontal: AppPaddings.xsPadding,
+        vertical: AppPadding.xsPadding,
+        horizontal: AppPadding.xsPadding,
       ),
     );
   }
@@ -222,8 +222,8 @@ class AppTheme {
         backgroundColor: AppColors.neutralBackgroundLight,
         foregroundColor: AppColors.secondaryTeal,
         padding: EdgeInsets.symmetric(
-          horizontal: AppPaddings.mPadding,
-          vertical: AppPaddings.sPadding,
+          horizontal: AppPadding.mPadding,
+          vertical: AppPadding.sPadding,
         ),
         maximumSize: const Size.fromHeight(52),
         side: BorderSide(color: AppColors.secondaryLightTeal),
@@ -240,8 +240,8 @@ class AppTheme {
       style: ElevatedButton.styleFrom(
         foregroundColor: AppColors.primaryBlue[0],
         padding: EdgeInsets.symmetric(
-          horizontal: AppPaddings.mPadding,
-          vertical: AppPaddings.sPadding,
+          horizontal: AppPadding.mPadding,
+          vertical: AppPadding.sPadding,
         ),
         maximumSize: const Size.fromHeight(52),
         shape: RoundedRectangleBorder(

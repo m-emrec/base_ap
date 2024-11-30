@@ -41,7 +41,7 @@ class AuthForm extends StatelessWidget {
           EmailField(
             controller: emailController,
           ),
-          Gap(AppPaddings.mPadding),
+          Gap(AppPadding.mPadding),
 
           /// PasswordField
           Column(

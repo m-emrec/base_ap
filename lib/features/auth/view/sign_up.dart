@@ -20,7 +20,7 @@ class _SignUpState extends ConsumerState<SignUp> with SignUpMixin {
       resizeToAvoidBottomInset: false,
       appBar: AppBar(),
       body: Padding(
-        padding: AppPaddings.authHPadding,
+        padding: const AppPadding.horizontalMSymmetric(),
         child: Column(
           children: [
             Image.asset(AppAssets.logoPath),
@@ -33,8 +33,7 @@ class _SignUpState extends ConsumerState<SignUp> with SignUpMixin {
               emailController: emailController,
               passwordController: passwordController,
             ),
-
-            MaxGap(AppPaddings.mPadding),
+            const MaxGap(AppPadding.mPadding),
             _TermsAndConditions(
               isAccepted: isAccepted,
               onAcceptedChanged: (value) {
@@ -43,20 +42,20 @@ class _SignUpState extends ConsumerState<SignUp> with SignUpMixin {
                 });
               },
             ),
-            MaxGap(AppPaddings.lPadding),
+            const MaxGap(AppPadding.lPadding),
 
             /// Sign In Button
             ResponsiveElevatedButton(
               onPressed: onTapSignUp,
               child: Text(createYourAccount),
             ),
-            MaxGap(AppPaddings.sPadding),
+            const MaxGap(AppPadding.sPadding),
 
             /// Already have an account
             const _AlreadyHaveAnAccount(),
             const Spacer(),
             const OrDivider(),
-            MaxGap(AppPaddings.lPadding),
+            const MaxGap(AppPadding.lPadding),
             GoogleSignInButton(),
           ],
         ),

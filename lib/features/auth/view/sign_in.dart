@@ -19,7 +19,7 @@ class _SignInState extends ConsumerState<SignIn> with SignInMixin {
       resizeToAvoidBottomInset: false,
       appBar: AppBar(),
       body: Padding(
-        padding: AppPaddings.authHPadding,
+        padding: const AppPadding.horizontalMSymmetric(),
         child: Column(
           children: [
             Image.asset(AppAssets.logoPath),
@@ -33,20 +33,20 @@ class _SignInState extends ConsumerState<SignIn> with SignInMixin {
               passwordController: passwordController,
               showForgotPassword: true,
             ),
-            MaxGap(AppPaddings.lPadding),
+            const MaxGap(AppPadding.lPadding),
 
             // MARK: Sign In Button
             ResponsiveElevatedButton(
               onPressed: onTapSignIn,
               child: Text(signIn),
             ),
-            MaxGap(AppPaddings.sPadding),
+            const MaxGap(AppPadding.sPadding),
 
             /// Dont have an account
             const _DontHaveAnAccount(),
             const Spacer(),
             const OrDivider(),
-            MaxGap(AppPaddings.lPadding),
+            const MaxGap(AppPadding.lPadding),
             GoogleSignInButton(),
           ],
         ),
