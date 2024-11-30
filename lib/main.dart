@@ -1,34 +1,47 @@
-import 'package:flutter/material.dart';
+import 'dart:async';
 
-void main() {
-  runApp(const MyApp());
+import 'package:base_ap/config/theme/app_theme.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:toastification/toastification.dart';
+
+import 'config/routes/router.dart';
+
+part 'core/utils/init/core_init.dart';
+part 'core/utils/init/localization_init.dart';
+
+void main() async {
+  await _CoreInit().init();
+  runApp(
+    EasyLocalization(
+      supportedLocales: _LocalizationInit.supportedLocales,
+      path: _LocalizationInit.path,
+      fallbackLocale: _LocalizationInit.fallbackLocale,
+      child: const ProviderScope(
+        child: MyApp(),
+      ),
+    ),
+  );
 }
 
+// ignore: public_member_api_docs
 class MyApp extends StatelessWidget {
+  // ignore: public_member_api_docs
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        useMaterial3: true,
+    return ToastificationWrapper(
+      child: MaterialApp.router(
+        debugShowCheckedModeBanner: false,
+        routerConfig: AppRouter().router,
+        localizationsDelegates: context.localizationDelegates,
+        supportedLocales: context.supportedLocales,
+        locale: context.locale,
+        theme: AppTheme().lightTheme,
       ),
-      home: const MyWidget(),
     );
-  }
-}
-
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
-
-  @override
-  State<MyWidget> createState() => _MyWidgetState();
-}
-
-class _MyWidgetState extends State<MyWidget> {
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }

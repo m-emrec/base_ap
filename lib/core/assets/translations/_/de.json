@@ -1,0 +1,170 @@
+{
+    "errors": {
+        "The_email_address_is_already_in_use_by_another_account": "Die E-Mail-Adresse wird bereits von einem anderen Konto verwendet. Versuchen Sie sich anzumelden.",
+        "The_email_address_is_badly_formatted": "Bitte geben Sie eine gültige E-Mail-Adresse ein. Z.B.: xxx@xx.com",
+        "INVALID_LOGIN_CREDENTIALS": "Bitte überprüfen Sie Ihre E-Mail oder Ihr Passwort.",
+        "invalid_api_key": "Der angegebene API-Schlüssel ist ungültig.",
+        "user_disabled": "Das Benutzerkonto wurde von einem Administrator deaktiviert.",
+        "user_not_found": "Es wurde kein Benutzerkonto mit dieser Kennung gefunden.",
+        "wrong_password": "Das Passwort für die angegebene E-Mail-Adresse ist ungültig.",
+        "email_already_in_use": "Die E-Mail-Adresse wird bereits von einem anderen Konto verwendet.",
+        "invalid_email": "Die E-Mail-Adresse ist ungültig.",
+        "operation_not_allowed": "Diese Aktion ist nicht erlaubt. Kontaktieren Sie Ihren Administrator.",
+        "weak_password": "Das Passwort muss mindestens 6 Zeichen lang sein.",
+        "provider_already_linked": "Dieser Anbieter ist bereits mit dem Benutzer verbunden.",
+        "credential_already_in_use": "Diese Anmeldeinformationen sind bereits mit einem anderen Konto verknüpft.",
+        "requires_recent_login": "Diese Aktion erfordert eine aktuelle Authentifizierung. Bitte melden Sie sich erneut an.",
+        "user_mismatch": "Die angegebenen Anmeldedaten stimmen nicht mit dem zuvor angemeldeten Benutzer überein.",
+        "provider_not_found": "Es wurde kein unterstützter Anbieter für die Authentifizierung gefunden.",
+        "invalid_verification_code": "Der Bestätigungscode ist ungültig.",
+        "invalid_verification_id": "Die Bestätigungs-ID ist ungültig.",
+        "captcha_check_failed": "Das bereitgestellte reCAPTCHA-Token ist ungültig, abgelaufen oder wurde bereits verwendet.",
+        "app_not_authorized": "Die App ist nicht berechtigt, Firebase Authentication mit dem angegebenen API-Schlüssel zu verwenden.",
+        "expired_action_code": "Der Aktionscode ist abgelaufen.",
+        "invalid_action_code": "Der Aktionscode ist ungültig. Möglicherweise ist der Code falsch formatiert oder wurde bereits verwendet.",
+        "invalid_continue_uri": "Die angegebene Weiterleitungs-URL im Anfrage ist ungültig.",
+        "missing_continue_uri": "Es muss eine Weiterleitungs-URL angegeben werden.",
+        "internal_error": "Ein interner Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
+        "invalid_tenant_id": "Die Mandanten-ID der Authentifizierungsinstanz ist ungültig.",
+        "tenant_id_mismatch": "Die angegebene Mandanten-ID stimmt nicht mit der Mandanten-ID der Authentifizierungsinstanz überein.",
+        "unsupported_tenant_operation": "Diese Aktion wird in einem Multi-Tenant-Kontext nicht unterstützt.",
+        "quota_exceeded": "Die Aktion konnte aufgrund von Ressourcenlimits nicht abgeschlossen werden. Kontaktieren Sie den Firebase-Support.",
+        "tenant_not_found": "Für die angegebene Kennung wurde kein Mandant gefunden.",
+        "code_expired": "Der SMS-Code ist abgelaufen. Bitte senden Sie den Bestätigungscode erneut.",
+        "user_token_expired": "Das Token des Benutzers ist abgelaufen. Bitte melden Sie sich erneut an.",
+        "provider_data_not_found": "Für die angegebene Anbieter-ID wurde kein Benutzer gefunden.",
+        "invalid_uid": "Die angegebene UID ist ungültig.",
+        "permission_denied": "Die Aktion wurde aufgrund unzureichender Berechtigungen abgelehnt.",
+        "unauthenticated": "Die Aktion erfordert eine Authentifizierung.",
+        "not_found": "Das angeforderte Dokument oder die Ressource wurde nicht gefunden.",
+        "already_exists": "Das Dokument oder die Ressource existiert bereits und kann nicht überschrieben werden.",
+        "resource_exhausted": "Kontingent überschritten oder Rate limitiert. Kontaktieren Sie den Firebase-Support.",
+        "invalid_argument": "Das angegebene Argument ist ungültig.",
+        "deadline_exceeded": "Der Vorgang wurde aufgrund eines Zeitüberschreitungsfehlers nicht abgeschlossen.",
+        "aborted": "Der Vorgang wurde abgebrochen, typischerweise aufgrund eines Konkurrenzproblems.",
+        "out_of_range": "Der angegebene Wert liegt außerhalb des zulässigen Bereichs.",
+        "unimplemented": "Die Aktion wurde noch nicht implementiert oder wird nicht unterstützt.",
+        "internal": "Ein interner Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
+        "unavailable": "Der Dienst ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut.",
+        "data_loss": "Unwiederbringlicher Datenverlust oder -korruption.",
+        "cancelled": "Der Vorgang wurde abgebrochen.",
+        "unknown": "Ein unbekannter Fehler ist aufgetreten.",
+        "account_exists_with_different_credential": "Ein Konto mit derselben E-Mail-Adresse, jedoch mit anderen Anmeldedaten, existiert bereits. Versuchen Sie, sich mit einer anderen Methode anzumelden oder das bestehende Konto mit diesem Anbieter zu verknüpfen.",
+        "invalid_credential": "Die angegebenen Anmeldedaten sind ungültig oder abgelaufen. Bitte melden Sie sich erneut an.",
+        "popup_closed_by_user": "Das Google-Anmeldefenster wurde vom Benutzer geschlossen, bevor die Anmeldung abgeschlossen wurde.",
+        "popup_blocked": "Der Browser hat das Google-Anmeldefenster blockiert. Stellen Sie sicher, dass Pop-ups in den Browsereinstellungen nicht blockiert werden.",
+        "invalid_client_id": "Die angegebene Google-API-Client-ID ist ungültig oder stimmt nicht mit den konfigurierten OAuth 2.0-Client-IDs überein.",
+        "network_request_failed": "Während der Google-Anmeldung ist ein Netzwerkfehler aufgetreten. Überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.",
+        "no_such_provider": "Für die angegebene ID wurde kein Authentifizierungsanbieter gefunden. Stellen Sie sicher, dass Google-Anmeldung in Ihrem Firebase-Projekt aktiviert ist.",
+        "token_expired": "Das Google-Anmeldetoken ist abgelaufen. Bitte melden Sie sich erneut an.",
+        "user_cancelled": "Der Benutzer hat den Google-Anmeldevorgang abgebrochen.",
+        "web_storage_unsupported": "Der aktuelle Browser unterstützt keinen Webspeicher. Stellen Sie sicher, dass localStorage und sessionStorage unterstützt werden.",
+        "invalid_user_token": "Das Benutzer-Token ist ungültig. Bitte melden Sie sich erneut an.",
+        "custom_token_mismatch": "Das benutzerdefinierte Token gehört zu einem anderen Zielpublikum.",
+        "dynamic_link_not_activated": "Die angegebene dynamische Link-Domain ist für Firebase Dynamic Links nicht aktiviert. Aktivieren Sie sie in der Firebase-Konsole.",
+        "dynamic_link_not_match_config": "Die angegebene dynamische Link-Domain stimmt nicht mit der in der Firebase-Konsole konfigurierten Domain überein.",
+        "image_not_found": "Bild nicht gefunden."
+    },
+    "signin": {
+        "signin": "Anmelden",
+        "forgot_password": "Passwort vergessen?",
+        "email": "E-Mail",
+        "validEmailError": "Bitte geben Sie eine gültige E-Mail-Adresse ein.\nBeispiel: xxx@xxx.com",
+        "password_validation_error": "Das Passwort muss mindestens 6 Zeichen lang sein.",
+        "password": "Passwort",
+        "dontHaveAnAccount": "Sie haben noch kein Konto?",
+        "createOne": " Erstellen",
+        "or": "oder",
+        "successfullySignedIn": "Erfolgreich angemeldet"
+    },
+    "signup": {
+        "signup": "Registrieren",
+        "iAcceptThe": "Ich akzeptiere die",
+        "termsAndConditions": "Allgemeinen Geschäftsbedingungen",
+        "alreadyHaveAnAccount": "Haben Sie bereits ein Konto?",
+        "here": "hier",
+        "termAndConditionsText": "# NFCBox Allgemeine Geschäftsbedingungen\n\n**Zuletzt aktualisiert:** [Datum]\n\nWillkommen bei NFCBox. Durch das Herunterladen, Installieren oder Verwenden der mobilen Anwendung NFCBox (\"App\") stimmen Sie den folgenden Allgemeinen Geschäftsbedingungen (\"Bedingungen\") zu. Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie unsere Dienste nutzen.\n\n## 1. Annahme der Bedingungen\n\nDurch den Zugriff auf die NFCBox-App oder deren Nutzung erklären Sie sich damit einverstanden, diese Bedingungen und alle geltenden Gesetze und Vorschriften einzuhalten. Wenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, dürfen Sie die App nicht nutzen.\n\n## 2. Nutzung der App\n\nNFCBox wurde entwickelt, um Benutzern beim Verwalten von NFC-Chips und zugehörigen Daten zu helfen. Sie sind dafür verantwortlich, dass Ihre Nutzung der App mit allen geltenden Gesetzen und Vorschriften übereinstimmt.\n\n## 3. Konto-Registrierung\n\nFür die Nutzung bestimmter Funktionen von NFCBox müssen Sie möglicherweise ein Konto erstellen. Sie erklären sich damit einverstanden, bei der Registrierung genaue und vollständige Informationen bereitzustellen und diese Informationen auf dem neuesten Stand zu halten. Sie sind dafür verantwortlich, die Vertraulichkeit Ihrer Kontodaten zu wahren und für alle Aktivitäten in Ihrem Konto verantwortlich zu sein.\n\n## 4. Funktionalität von NFC-Chips\n\nNFCBox ermöglicht es Benutzern, mit NFC-Chips für verschiedene Zwecke zu interagieren. Sie erkennen an, dass NFCBox nicht für den Inhalt oder die Sicherheit von auf NFC-Chips gespeicherten Daten verantwortlich ist, und Sie sind allein dafür verantwortlich, sicherzustellen, dass Ihre Nutzung der Chips mit allen geltenden Gesetzen und Sicherheitsanforderungen übereinstimmt.\n\n## 5. Sicherheit und Datenschutz\n\nNFCBox nimmt Sicherheit ernst. Wir können jedoch nicht garantieren, dass Ihre Daten vollständig vor unbefugtem Zugriff geschützt sind. Sie sind dafür verantwortlich, die Sicherheit Ihrer Geräte und NFC-Chips zu gewährleisten. NFCBox haftet nicht für Verluste oder Schäden, die durch unbefugten Zugriff auf Ihr Konto oder Ihre Daten entstehen.\n\nWeitere Informationen darüber, wie wir Ihre persönlichen Daten behandeln, finden Sie in unserer **Datenschutzrichtlinie**.\n\n## 6. Verbotene Aktivitäten\n\nSie stimmen zu, NFCBox nicht für illegale oder unbefugte Zwecke zu verwenden, einschließlich, aber nicht beschränkt auf:\n- Manipulation von NFC-Chips, die Ihnen nicht gehören.\n- Nutzung von NFCBox auf eine Weise, die die App oder ihre Dienste beschädigen, deaktivieren oder beeinträchtigen könnte.\n- Verletzung von Gesetzen oder Vorschriften, die in Ihrer Gerichtsbarkeit gelten.\n\n## 7. Geistiges Eigentum\n\nAlle Inhalte, Funktionen und Funktionalitäten (einschließlich, aber nicht beschränkt auf Texte, Grafiken, Logos, Symbole und Software) der NFCBox-App gehören NFCBox oder sind von NFCBox lizenziert und durch Gesetze zum Schutz geistigen Eigentums geschützt. Sie stimmen zu, keine Teile der App ohne vorherige schriftliche Zustimmung von NFCBox zu reproduzieren, zu verbreiten oder anderweitig zu nutzen.\n\n## 8. Haftungsbeschränkung\n\nNFCBox wird \"wie besehen\" und \"wie verfügbar\" bereitgestellt. Wir übernehmen keine Garantien oder Zusicherungen hinsichtlich der Verfügbarkeit, Genauigkeit oder Zuverlässigkeit der App. NFCBox haftet nicht für indirekte, zufällige oder Folgeschäden, die durch Ihre Nutzung oder die Unfähigkeit, die App zu nutzen, entstehen.\n\n## 9. Änderungen der Bedingungen\n\nNFCBox behält sich das Recht vor, diese Bedingungen jederzeit zu ändern. Änderungen werden innerhalb der App veröffentlicht, und Ihre fortgesetzte Nutzung der App nach solchen Änderungen stellt Ihre Zustimmung zu den überarbeiteten Bedingungen dar.\n\n## 10. Kündigung\n\nWir behalten uns das Recht vor, Ihr Konto jederzeit mit oder ohne Vorankündigung zu kündigen oder zu sperren, wenn Sie gegen diese Bedingungen verstoßen oder aus anderen Gründen nach unserem alleinigen Ermessen.\n\n## 11. Anwendbares Recht\n\nDiese Bedingungen unterliegen den Gesetzen von [Ihr Land/Bundesland] und werden gemäß diesen ausgelegt, ohne Rücksicht auf Kollisionsnormen.\n\n## 12. Kontaktinformationen\n\nWenn Sie Fragen oder Bedenken zu diesen Bedingungen haben, kontaktieren Sie uns bitte unter:\n\n**E-Mail:** [Ihre Kontakt-E-Mail-Adresse]\n",
+        "pleaseAcceptTermsConditions": "Bitte akzeptieren Sie die allgemeinen Geschäftsbedingungen.",
+        "createYourAccount": "Erstellen Sie Ihr Konto",
+        "welcomeNfcBox": "Willkommen bei NFCBox"
+    },
+    "forgotPassword": {
+        "forgotPassword": "Passwort vergessen",
+        "sendEmail": "E-Mail senden",
+        "validEmailError": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+        "sendResetLink": "E-Mail zum Zurücksetzen des Passworts gesendet.\nBitte überprüfen Sie Ihre E-Mail-Adresse"
+    },
+    "home": {
+        "readNFC": "NFC lesen",
+        "seeItems": "Elemente anzeigen"
+    },
+    "nfc": {
+        "errors": {
+            "unAuthorized": "Nicht autorisierter Tag",
+            "unAvailable": "NFC nicht verfügbar.",
+            "timeOut": "Zeitüberschreitung beim Lesen von NFC",
+            "unknown": "Unbekannter Fehler"
+        },
+        "prepareNfcText": "Um NFC zu verwenden, halten Sie Ihr Gerät in die Nähe eines NFC-fähigen Objekts oder Geräts. Stellen Sie sicher, dass NFC in den Geräteeinstellungen aktiviert ist. Wenn Ihr Gerät nahe genug ist, erkennt es automatisch den NFC-Tag und verarbeitet die Informationen.",
+        "howToUseNFCText": "So verwenden Sie NFC",
+        "ready": "Bereit",
+        "cancelText": "Abbrechen",
+        "nfcReadSuccessfully": "NFC erfolgreich gelesen",
+        "statusText": "Scannen...",
+        "pleaseHoldYourPhoneNearTheNFCTagText": "Bitte halten Sie Ihr Telefon in die Nähe des NFC-Tags"
+    },
+    "item": {
+        "sortTypes": {
+            "date": "Nach Datum sortieren",
+            "name": "Nach Name sortieren",
+            "fieldCount": "Nach Anzahl der Felder sortieren"
+        },
+        "pageTitle": "Elemente",
+        "noItemsText": "Keine Elemente gefunden",
+        "asc": "AUFSTEIGEND",
+        "desc": "ABSTEIGEND"
+    },
+    "itemDetail": {
+        "createdDate": "Erstellungsdatum",
+        "tapToSeeFullImage": "Tippen Sie, um das vollständige Bild zu sehen",
+        "noFieldsText": "Keine Felder"
+    },
+    "createItem": {
+        "pageTitleCreate": "Element erstellen",
+        "pageTitleEdit": "Element bearbeiten",
+        "addField": "Feld hinzufügen",
+        "enterItemName": "Elementnamen eingeben",
+        "itemName": "Elementname",
+        "errors": {
+            "failedToCreateItem": "Element konnte nicht erstellt werden",
+            "failedToUpdateItem": "Element konnte nicht aktualisiert werden",
+            "fieldNameAndFieldValidation": "Feldname und Feldwert dürfen nicht leer sein",
+            "itemNameValidation": "Elementname darf nicht leer sein"
+        },
+        "success": {
+            "itemCreated": "Element erfolgreich erstellt",
+            "itemUpdated": "Element erfolgreich aktualisiert"
+        },
+        "chooseImage": {
+            "takePhoto": "Foto aufnehmen",
+            "chooseFromGallery": "Aus Galerie auswählen"
+        },
+        "fieldNameEntry": {
+            "label": "Feldname"
+        }
+    },
+    "itemFieldNames": {
+        "color": "Farbe",
+        "date": "Datum",
+        "text": "Text"
+    },
+    "tag": {
+        "noNameText": "Kein Name",
+        "longPressToSelect": "Langes Drücken, um ein Element auszuwählen",
+        "nameCantBeEmpty": "Name darf nicht leer sein",
+        "ifYouWantToCancelTheEditPressTheCloseButton": "Wenn Sie die Bearbeitung abbrechen möchten, drücken Sie die Schließen-Schaltfläche",
+        "add": "Hinzufügen",
+        "selected": "Ausgewählt",
+        "noItemsFound": "Keine Elemente gefunden"
+    }
+}

@@ -1,0 +1,170 @@
+{
+    "errors": {
+        "The_email_address_is_already_in_use_by_another_account": "Bu e-posta adresi zaten başka bir hesap tarafından kullanılıyor. Giriş yapmayı deneyin.",
+        "The_email_address_is_badly_formatted": "Lütfen geçerli bir e-posta adresi sağlayın. Örn: xxx@xx.com",
+        "INVALID_LOGIN_CREDENTIALS": "Lütfen e-posta veya şifrenizi kontrol edin.",
+        "invalid_api_key": "Sağlanan API anahtarı geçersiz.",
+        "user_disabled": "Kullanıcı hesabı bir yönetici tarafından devre dışı bırakıldı.",
+        "user_not_found": "Bu tanımlayıcı ile eşleşen bir kullanıcı kaydı bulunamadı.",
+        "wrong_password": "Verilen e-posta için şifre geçersiz.",
+        "email_already_in_use": "Bu e-posta adresi zaten başka bir hesap tarafından kullanılıyor.",
+        "invalid_email": "E-posta adresi geçerli değil.",
+        "operation_not_allowed": "Bu işlem izin verilmiyor. Yönetici ile iletişime geçin.",
+        "weak_password": "Şifre en az 6 karakter uzunluğunda olmalıdır.",
+        "provider_already_linked": "Bu sağlayıcı zaten kullanıcıya bağlı.",
+        "credential_already_in_use": "Bu kimlik bilgisi zaten başka bir kullanıcı hesabıyla ilişkilendirilmiş.",
+        "requires_recent_login": "Bu işlem hassastır ve yakın zamanda kimlik doğrulaması gerektirir. Lütfen yeniden giriş yapın.",
+        "user_mismatch": "Sağlanan kimlik bilgileri, önceden giriş yapılmış kullanıcıyla eşleşmiyor.",
+        "provider_not_found": "Kullanıcıyı kimlik doğrulamak için desteklenen bir sağlayıcı bulunamadı.",
+        "invalid_verification_code": "Doğrulama kodu geçersiz.",
+        "invalid_verification_id": "Doğrulama kimliği geçersiz.",
+        "captcha_check_failed": "Sağlanan reCAPTCHA yanıt belirteci geçersiz, süresi dolmuş veya zaten kullanılmış.",
+        "app_not_authorized": "Bu uygulama, sağlanan API anahtarıyla Firebase Kimlik Doğrulama kullanımı için yetkilendirilmemiş.",
+        "expired_action_code": "Eylem kodunun süresi dolmuş.",
+        "invalid_action_code": "Eylem kodu geçersiz. Kod hatalı biçimlendirilmiş veya zaten kullanılmış olabilir.",
+        "invalid_continue_uri": "İstek sırasında sağlanan devam URL'si geçersiz.",
+        "missing_continue_uri": "İstek sırasında bir devam URL'si sağlanmalıdır.",
+        "internal_error": "Bir iç hata oluştu. Lütfen daha sonra tekrar deneyin.",
+        "invalid_tenant_id": "Kimlik doğrulama örneğinin kiracı kimliği geçersiz.",
+        "tenant_id_mismatch": "Sağlanan kiracı kimliği, kimlik doğrulama örneğinin kiracı kimliğiyle eşleşmiyor.",
+        "unsupported_tenant_operation": "Bu işlem çok kiracılı bir bağlamda desteklenmiyor.",
+        "quota_exceeded": "İşlem kaynak limitleri nedeniyle tamamlanamadı. Firebase desteğiyle iletişime geçin.",
+        "tenant_not_found": "Verilen tanımlayıcı için bir kiracı bulunamadı.",
+        "code_expired": "SMS kodunun süresi dolmuş. Doğrulama kodunu tekrar gönderin.",
+        "user_token_expired": "Kullanıcının belirteci süresi dolmuş. Lütfen yeniden giriş yapın.",
+        "provider_data_not_found": "Verilen sağlayıcı kimliği için bir kullanıcı kaydı bulunamadı.",
+        "invalid_uid": "Sağlanan UID geçersiz.",
+        "permission_denied": "İşlem, yetersiz izinler nedeniyle reddedildi.",
+        "unauthenticated": "İşlem kimlik doğrulama gerektiriyor.",
+        "not_found": "İstenen belge veya kaynak bulunamadı.",
+        "already_exists": "Belge veya kaynak zaten mevcut ve üzerine yazılamaz.",
+        "resource_exhausted": "Kota aşıldı veya oran sınırına ulaşıldı. Firebase desteğiyle iletişime geçin.",
+        "invalid_argument": "Sağlanan argüman geçersiz.",
+        "deadline_exceeded": "İşlemin süresi doldu ve tamamlanamadı.",
+        "aborted": "İşlem, genellikle bir eşzamanlılık sorunu nedeniyle iptal edildi.",
+        "out_of_range": "Sağlanan değer izin verilen aralık dışında.",
+        "unimplemented": "İşlem uygulanmamış veya henüz desteklenmiyor.",
+        "internal": "Bir iç hata oluştu. Lütfen daha sonra tekrar deneyin.",
+        "unavailable": "Hizmet şu anda kullanılamıyor. Lütfen daha sonra tekrar deneyin.",
+        "data_loss": "Geri alınamaz veri kaybı veya bozulma.",
+        "cancelled": "İşlem iptal edildi.",
+        "unknown": "Bilinmeyen bir hata oluştu.",
+        "account_exists_with_different_credential": "Aynı e-posta adresine sahip ancak farklı kimlik doğrulama bilgilerine sahip bir hesap zaten var. Farklı bir yöntemle giriş yapmayı deneyin veya mevcut hesabı bu kimlik doğrulama sağlayıcısına bağlayın.",
+        "invalid_credential": "Sağlanan kimlik bilgisi geçersiz veya süresi dolmuş. Lütfen yeniden giriş yapın.",
+        "popup_closed_by_user": "Google Oturum Açma penceresi, kullanıcı tarafından giriş işlemi tamamlanmadan kapatıldı.",
+        "popup_blocked": "Tarayıcı Google Oturum Açma penceresini engelledi. Tarayıcı ayarlarından pop-up engellemesini devre dışı bırakın.",
+        "invalid_client_id": "Sağlanan Google API istemci kimliği geçersiz veya yapılandırılmış OAuth 2.0 istemci kimlikleriyle eşleşmiyor.",
+        "network_request_failed": "Google Oturum Açma işlemi sırasında bir ağ hatası oluştu. İnternet bağlantınızı kontrol edin ve tekrar deneyin.",
+        "no_such_provider": "Verilen ID için bir kimlik doğrulama sağlayıcısı bulunamadı. Firebase projesinde Google Oturum Açma'nın etkin olduğundan emin olun.",
+        "token_expired": "Google Oturum Açma belirteci süresi dolmuş. Lütfen yeniden giriş yapın.",
+        "user_cancelled": "Kullanıcı, Google Oturum Açma işlemini iptal etti.",
+        "web_storage_unsupported": "Web depolama şu anda kullanılan tarayıcıda desteklenmiyor. localStorage ve sessionStorage'ın desteklendiğinden emin olun.",
+        "invalid_user_token": "Kullanıcının belirteci geçersiz. Lütfen yeniden giriş yapın.",
+        "custom_token_mismatch": "Özel belirteç farklı bir kitleye karşılık geliyor.",
+        "dynamic_link_not_activated": "Sağlanan dinamik bağlantı alanı Firebase Dinamik Bağlantılar için etkinleştirilmemiş. Firebase konsolunda etkinleştirin.",
+        "dynamic_link_not_match_config": "Sağlanan dinamik bağlantı alanı, Firebase konsolundaki yapılandırılmış alanla eşleşmiyor.",
+        "image_not_found": "Görüntü bulunamadı."
+    },
+    "signin": {
+        "signin": "Giriş Yap",
+        "forgot_password": "Şifremi Unuttum?",
+        "email": "E-posta",
+        "validEmailError": "Lütfen geçerli bir e-posta adresi yazın\nörn: xxx@xxx.com",
+        "password_validation_error": "Şifre en az 6 karakter uzunluğunda olmalıdır.",
+        "password": "Şifre",
+        "dontHaveAnAccount": "Hesabınız yok mu?",
+        "createOne": " Oluştur",
+        "or": "veya",
+        "successfullySignedIn": "Başarıyla giriş yapıldı."
+    },
+    "signup": {
+        "signup": "Kayıt Ol",
+        "iAcceptThe": "Kabul ediyorum",
+        "termsAndConditions": "Şartlar ve Koşullar",
+        "alreadyHaveAnAccount": "Zaten bir hesabınız var mı? ",
+        "here": "burada",
+        "pleaseAcceptTermsConditions": "Lütfen şartları ve koşulları kabul edin.",
+        "termAndConditionsText": "# NFCBox Şartlar ve Koşullar\n\n**Son Güncelleme Tarihi:** [Tarih]\n\nNFCBox'a hoş geldiniz. NFCBox mobil uygulamasını (\"Uygulama\") indirerek, yükleyerek veya kullanarak, aşağıdaki şartlar ve koşullara (\"Şartlar\") tabi olduğunuzu kabul edersiniz. Hizmetlerimizi kullanmadan önce lütfen bu Şartları dikkatlice okuyun.\n\n## 1. Şartların Kabulü\n\nNFCBox Uygulamasına erişerek veya kullanarak, bu Şartlara ve tüm geçerli yasa ve düzenlemelere uymayı ve bağlı kalmayı kabul edersiniz. Bu Şartların herhangi bir kısmını kabul etmiyorsanız, Uygulamayı kullanmamalısınız.\n\n## 2. Uygulamanın Kullanımı\n\nNFCBox, kullanıcıların NFC çiplerini ve ilgili verilerini yönetmesine yardımcı olacak şekilde tasarlanmıştır. Uygulamayı kullanımınızın tüm geçerli yasa ve düzenlemelere uygun olmasını sağlamak sizin sorumluluğunuzdadır.\n\n## 3. Hesap Kaydı\n\nNFCBox'un bazı özelliklerini kullanmak için bir hesap oluşturmanız gerekebilir. Hesap oluştururken doğru ve eksiksiz bilgiler sağlamayı ve bu bilgileri güncel tutmayı kabul edersiniz. Hesap bilgilerinizi gizli tutmak ve hesabınızda gerçekleşen tüm etkinliklerden siz sorumlusunuz.\n\n## 4. NFC Çip İşlevselliği\n\nNFCBox, kullanıcıların çeşitli amaçlarla NFC çipleriyle etkileşim kurmasına olanak tanır. NFC çiplerinde saklanan herhangi bir veri içeriği veya güvenliğinden NFCBox'ın sorumlu olmadığını kabul edersiniz. Çiplerin kullanımının ilgili yasa ve güvenlik gereksinimlerine uygun olmasını sağlamak yalnızca sizin sorumluluğunuzdadır.\n\n## 5. Güvenlik ve Gizlilik\n\nNFCBox, güvenliği ciddiye alır. Ancak, verilerinizin yetkisiz erişimden tamamen güvenli olduğunu garanti edemeyiz. Cihazlarınızın ve NFC çiplerinizin güvenliğini sağlamak sizin sorumluluğunuzdadır. Hesabınıza veya verilerinize yetkisiz erişimden kaynaklanan herhangi bir kayıp veya zarardan NFCBox sorumlu olmayacaktır.\n\nKişisel verilerinizi nasıl işlediğimizle ilgili daha fazla bilgi için lütfen **Gizlilik Politikamıza** başvurun.\n\n## 6. Yasaklı Faaliyetler\n\nNFCBox'ı yasa dışı veya yetkisiz amaçlar için kullanmamayı kabul edersiniz. Buna, ancak bunlarla sınırlı olmamak üzere şunlar dahildir:\n- Size ait olmayan NFC çiplerini kurcalamak.\n- NFCBox'ı uygulamaya veya hizmetlerine zarar verebilecek, devre dışı bırakabilecek veya bozabilecek şekilde kullanmak.\n- Yürürlükteki yasa ve düzenlemeleri ihlal etmek.\n\n## 7. Fikri Mülkiyet\n\nNFCBox Uygulamasının tüm içerik, özellik ve işlevleri (metin, grafik, logolar, simgeler ve yazılım dahil ancak bunlarla sınırlı olmamak üzere) NFCBox'a aittir veya NFCBox tarafından lisanslanmıştır ve fikri mülkiyet yasaları ile korunmaktadır. NFCBox'ın önceden yazılı izni olmadan Uygulamanın herhangi bir bölümünü çoğaltmamayı, dağıtmamayı veya başka bir şekilde kullanmamayı kabul edersiniz.\n\n## 8. Sorumluluğun Sınırlandırılması\n\nNFCBox, \"olduğu gibi\" ve \"mevcut olduğu gibi\" bir temelde sağlanmaktadır. Uygulamanın kullanılabilirliği, doğruluğu veya güvenilirliği hakkında hiçbir garanti veya taahhüt vermiyoruz. NFCBox, Uygulamayı kullanmanız veya kullanamamanızdan kaynaklanan dolaylı, tesadüfi veya sonuç olarak ortaya çıkan herhangi bir zarar için sorumlu olmayacaktır.\n\n## 9. Şartlarda Değişiklikler\n\nNFCBox, bu Şartları istediği zaman değiştirme hakkını saklı tutar. Yapılan değişiklikler Uygulama içerisinde yayınlanacaktır ve bu değişikliklerden sonra Uygulamayı kullanmaya devam etmeniz, revize edilen Şartları kabul ettiğiniz anlamına gelir.\n\n## 10. Hesabın Sonlandırılması\n\nBu Şartları ihlal etmeniz durumunda veya tamamen kendi takdirimize bağlı olarak, hesabınızı herhangi bir zamanda, bildirimli veya bildirimsiz şekilde sonlandırma veya askıya alma hakkını saklı tutarız.\n\n## 11. Geçerli Hukuk\n\nBu Şartlar, [Ülkeniz/Eyaletiniz] yasalarına tabi olacak ve bu yasalara göre yorumlanacaktır. Yasal düzenleme ilkelerine bakılmaksızın geçerli olacaktır.\n\n## 12. İletişim Bilgileri\n\nBu Şartlarla ilgili herhangi bir sorunuz veya endişeniz varsa, lütfen bizimle iletişime geçin:\n\n**E-posta:** [İletişim E-posta Adresiniz]\n",
+        "createYourAccount": "Hesabınızı oluşturun",
+        "welcomeNfcBox": "NFCBox'a Hoş Geldiniz"
+    },
+    "forgotPassword": {
+        "forgotPassword": "Şifremi Unuttum",
+        "sendEmail": "E-posta Gönder",
+        "validEmailError": "Lütfen geçerli bir e-posta adresi yazın",
+        "sendResetLink": "Şifre sıfırlama e-postası gönderildi.\nLütfen e-posta adresinizi kontrol edin"
+    },
+    "home": {
+        "readNFC": "NFC Oku",
+        "seeItems": "Öğeleri Gör"
+    },
+    "nfc": {
+        "errors": {
+            "unAuthorized": "Yetkisiz etiket",
+            "unAvailable": "NFC kullanılamıyor.",
+            "timeOut": "NFC okuma zaman aşımına uğradı",
+            "unknown": "Bilinmeyen hata"
+        },
+        "prepareNfcText": "NFC kullanmaya başlamak için cihazınızı NFC özellikli bir öğe veya cihazın yakınına getirin. NFC'nin cihaz ayarlarında etkin olduğundan emin olun. Cihazınız yeterince yakın olduğunda, NFC etiketini otomatik olarak algılar ve bilgileri işler.",
+        "howToUseNFCText": "NFC nasıl kullanılır",
+        "ready": "Hazır",
+        "cancelText": "İptal",
+        "nfcReadSuccessfully": "NFC başarıyla okundu",
+        "statusText": "Tarama...",
+        "pleaseHoldYourPhoneNearTheNFCTagText": "Lütfen telefonunuzu NFC etiketine yaklaştırın"
+    },
+    "item": {
+        "sortTypes": {
+            "date": "Tarihe göre sırala",
+            "name": "İsme göre sırala",
+            "fieldCount": "Alan sayısına göre sırala"
+        },
+        "pageTitle": "Öğeler",
+        "noItemsText": "Hiç öğe bulunamadı",
+        "asc": "ARTAN",
+        "desc": "AZALAN"
+    },
+    "itemDetail": {
+        "createdDate": "Oluşturulma Tarihi",
+        "tapToSeeFullImage": "Tam resmi görmek için dokunun",
+        "noFieldsText": "Alan yok"
+    },
+    "createItem": {
+        "pageTitleCreate": "Öğe Oluştur",
+        "pageTitleEdit": "Öğeyi Düzenle",
+        "addField": "Alan Ekle",
+        "enterItemName": "Öğe adını girin",
+        "itemName": "Öğe Adı",
+        "errors": {
+            "failedToCreateItem": "Öğe oluşturulamadı",
+            "failedToUpdateItem": "Öğe güncellenemedi",
+            "fieldNameAndFieldValidation": "Alan adı ve alan değeri boş olamaz",
+            "itemNameValidation": "Öğe adı boş olamaz"
+        },
+        "success": {
+            "itemCreated": "Öğe başarıyla oluşturuldu",
+            "itemUpdated": "Öğe başarıyla güncellendi"
+        },
+        "chooseImage": {
+            "takePhoto": "Fotoğraf Çek",
+            "chooseFromGallery": "Galeriden Seç"
+        },
+        "fieldNameEntry": {
+            "label": "Alan Adı"
+        }
+    },
+    "itemFieldNames": {
+        "color": "Renk",
+        "date": "Tarih",
+        "text": "Metin"
+    },
+    "tag": {
+        "noNameText": "Ad Yok",
+        "longPressToSelect": "Bir öğe seçmek için uzun basın",
+        "nameCantBeEmpty": "Ad boş olamaz",
+        "ifYouWantToCancelTheEditPressTheCloseButton": "Düzenlemeyi iptal etmek istiyorsanız, kapatma düğmesine basın",
+        "add": "Ekle",
+        "selected": "Seçildi",
+        "noItemsFound": "Hiç öğe bulunamadı"
+    }
+}
