@@ -4,77 +4,71 @@ This repository is the **Base App Template** I created to provide a solid starti
 
 ---
 
-### **What the Project Includes**
+### **Key Features**
+1. **Authentication**  
+   - Includes Sign In and Sign Up flows.  
+   - Firebase Authentication is integrated.  
+   - Google Sign-In functionality is implemented.  
 
-1. **Authentication (Sign In & Sign Up)**  
-   - I implemented **Sign In** and **Sign Up** pages with complete functionality.  
-   - Integrated **Firebase Authentication** for user login/logout.  
-   - Added **Google Sign-In** support for seamless authentication.  
+2. **Localization**  
+   - Supports multiple languages using EasyLocalization.  
+   - Localization keys are managed centrally through `locale_keys.g.dart`.  
 
-2. **Localization (Multi-language Support)**  
-   - Added multi-language support using **EasyLocalization**.  
-   - Created a `locale_keys.g.dart` file for easily managing localized strings.  
-
-3. **Clean and Modular File Structure**  
-   - Designed the project with **core** and **features** layers to ensure scalability and maintainability.  
-   - Organized reusable widgets, extensions, and helper files for efficient development.  
+3. **MVVM Architecture**  
+   - Organized to separate business logic from UI using the MVVM pattern.  
+   - Enhances code maintainability and scalability.  
 
 4. **State Management with Riverpod**  
-   - Implemented **Riverpod** for state management to ensure clean and reactive code.
+   - Reactive and scalable state management for better performance and modularity.  
 
-5. **Firebase Integration**  
-   - Set up **Firebase Core** for initializing Firebase.  
-   - Configured **Firebase Realtime Database (RTD)** and **Firestore** for database operations.  
-   - Integrated **Firebase Storage** for managing media files.  
+5. **Reusable Widgets**  
+   - Common UI components such as buttons, text fields, custom bottom sheets, and toast messages.  
 
-6. **Theming & Styling**  
-   - Centralized theming with predefined styles for colors, paddings, and text.  
-   - Included theme extensions for easy customization.  
+6. **Firebase Integration**  
+   - Fully configured for Firebase Authentication, Realtime Database, Firestore, and Storage.  
 
-7. **Routing and Navigation**  
-   - Used **GoRouter** for declarative navigation and clean routing.
+7. **Routing**  
+   - Declarative navigation implemented using GoRouter.  
 
-8. **Utility Features**  
-   - Integrated **Toastification** for custom toast messages.  
-   - Added support for loading skeletons using **Skeletonizer**.  
-   - Included **Google Fonts** for consistent typography.  
-   - Added **EasyLocalization** for multi-language support.
+8. **Custom Utilities**  
+   - Extensions for context, media query, and scaffold messenger for streamlined development.  
+   - Mixins for handling form states.  
+
+---
+
+### **Folder Structure Overview**
+
+#### **core**  
+- **constants**: Centralized constants for database keys, colors, paddings, and more.  
+- **extensions**: Helpful extensions for widget trees and responsive design.  
+- **resources**: Utility files for error handling, Firebase helpers, and data states.  
+- **utils**: Includes core initialization, localization setup, and mixins for repeated logic.  
+- **widgets**: Reusable UI components like custom buttons, toast messages, and bottom sheets.
+
+#### **config**  
+- **localization/lang**: Localization configuration and generated files.  
+- **routes**: Handles routing logic with GoRouter.  
+- **theme**: Contains app themes and extensions for consistent styling.
+
+#### **features**  
+- **auth**: Complete authentication module, including models, services, view models, and widgets.  
+- **home**: Placeholder for the home module, showcasing the extendability of the project.  
+- **splash**: Splash screen setup for the app.
 
 ---
 
 ### **Packages Used**
-
-#### Firebase Integration
-- `firebase_core`, `firebase_auth`, `firebase_database`, `cloud_firestore`, `firebase_storage`
-
-#### State Management
-- `flutter_riverpod`
-
-#### Navigation
-- `go_router`
-
-#### UI Enhancements
-- `gap`, `toastification`, `skeletonizer`, `google_fonts`, `lottie`
-
-#### Utilities
-- `email_validator`, `image_picker`, `cached_network_image`
+- **Firebase**: Core, Authentication, Realtime Database, Firestore, and Storage.  
+- **State Management**: Riverpod.  
+- **Localization**: EasyLocalization.  
+- **Navigation**: GoRouter.  
+- **UI Utilities**: Toastification, Skeletonizer, Lottie, Google Fonts.  
+- **Testing**: Mockito, Firebase Auth Mocks.  
 
 ---
 
-### **Folder Structure**
+This template is ideal for projects requiring Firebase integration, state management, and localization. Feel free to explore and use the repository for your next project!  
 
-1. **core**  
-   - Contains constants, extensions, resources, and shared utilities.  
+🔗 [GitHub - Base App Template](https://github.com/m-emrec/base_ap.git)  
 
-2. **config**  
-   - Houses localization and routing configurations.  
-
-3. **features**  
-   - Modular features like authentication and home, separated by MVVM layers.  
-
-4. **theme**  
-   - Includes app-wide themes and extensions.  
-
----
-
-This project serves as a template to kickstart your Flutter applications with best practices in architecture and design. Feel free to clone, customize, and expand on it! 🚀
+Let me know your thoughts or how I can improve this template further! 🚀
