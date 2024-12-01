@@ -26,9 +26,9 @@ void main() async {
   );
 }
 
-// ignore: public_member_api_docs
+///
 class MyApp extends StatelessWidget {
-  // ignore: public_member_api_docs
+  ///
   const MyApp({super.key});
 
   @override

@@ -45,7 +45,7 @@ abstract class DataState<T> {
 /// [T] is the type of data being handled.
 final class DataSuccess<T> extends DataState<T> {
   /// Constructs a [DataSuccess] with the given [resultData].
-  DataSuccess(T resultData) : super(resultData: resultData);
+  DataSuccess([T? resultData]) : super(resultData: resultData);
 }
 
 /// A class representing a failed data state.

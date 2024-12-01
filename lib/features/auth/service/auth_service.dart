@@ -28,12 +28,13 @@ class AuthService extends FirebaseUtils {
   Future<DataState<void>> signInWithEmail({
     required Credentials credentials,
   }) async {
-    return DataState.handleDataState<void>(
+    final result = DataState.handleDataState<void>(
       () => auth.signInWithEmailAndPassword(
         email: credentials.email,
         password: credentials.password,
       ),
     );
+    return result;
   }
 
   /// Sends a password reset email to the user.

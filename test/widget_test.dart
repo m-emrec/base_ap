@@ -5,25 +5,88 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-import 'package:base_ap/main.dart';
+import 'package:fake_async/fake_async.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_auth_mocks/firebase_auth_mocks.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:mockito/annotations.dart';
+import 'package:mockito/mockito.dart';
+import 'package:toastification/toastification.dart';
 
+import 'package:base_ap/core/resources/data_state.dart';
+import 'package:base_ap/features/auth/model/credentials.dart';
+import 'package:base_ap/features/auth/providers/provider.dart';
+import 'package:base_ap/features/auth/service/auth_service.dart';
+import 'package:base_ap/features/auth/view%20model/auth_view_model.dart';
+import 'package:base_ap/features/auth/view/auth_barrel.dart';
+import 'package:base_ap/features/auth/view/sign_in.dart';
+import 'package:base_ap/features/home/view/home.dart';
+import 'package:base_ap/main.dart';
+
+import 'widget_test.mocks.dart';
+
+@GenerateMocks([
+  AuthService,
+])
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  late MockAuthService mockAuthService;
+  late AuthViewModel viewModel;
+  group(
+    'Counter increments smoke test',
+    () {
+      setUp(() async {
+        // Initialize Firebase with a mocked instance
+        TestWidgetsFlutterBinding.ensureInitialized();
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+        // final container = ProviderContainer();
+        mockAuthService = MockAuthService();
+        viewModel = AuthViewModel(authService: mockAuthService);
+        // await Firebase.initializeApp();
+        TestWidgetsFlutterBinding.ensureInitialized();
+        MockFi.initializeApp(); // Mocked Firebase initialization
+      });
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+      testWidgets("Sign in with valid credentials updates state correctly",
+          (WidgetTester tester) async {
+        await tester.pumpWidget(
+          ToastificationWrapper(
+            child: MaterialApp(
+              home: Scaffold(
+                body: Builder(
+                  builder: (context) {
+                    return SignIn(); // Replace with the widget you are testing
+                  },
+                ),
+              ),
+            ),
+          ),
+        );
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
-  });
+        final Credentials credentials = Credentials(
+          email: "m.emrec45@gmail.com",
+          password: "123456",
+        );
+        MockFirebaseAuth mockFirebaseAuth = MockFirebaseAuth();
+        MockUser mockUser = MockUser(
+          uid: 'uid',
+          email: 'email',
+        );
+        final user = await mockFirebaseAuth.signInWithEmailAndPassword(
+          email: credentials.email,
+          password: credentials.password,
+        );
+        // Mock AuthService behavior
+
+        // await viewModel.signInWithEmail(credentials);
+        // Assert the user
+        expect(user.user?.email, "asd@g.com");
+        await tester.pumpAndSettle();
+        // Verify AuthService was called
+        // verify(mockAuthService.signInWithEmail(credentials: credentials))
+        //     .called(1);
+      });
+    },
+  );
 }
