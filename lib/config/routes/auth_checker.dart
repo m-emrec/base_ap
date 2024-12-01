@@ -1,10 +1,11 @@
 // ChangeNotifier to refresh the router
 import 'dart:async';
 
-import 'package:base_ap/config/routes/router.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
+import '/config/routes/router.dart';
 
 /// A ChangeNotifier that handles authentication state changes and notifies
 ///  listeners.

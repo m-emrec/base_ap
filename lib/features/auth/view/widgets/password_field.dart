@@ -1,7 +1,7 @@
-import 'package:base_ap/core/constants/generated/assets.gen.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
+import '/core/constants/generated/assets.gen.dart';
 import '../../../../config/localization/lang/locale_keys.g.dart';
 import '../../../../core/utils/mixins/text_field_state_mixin.dart';
 import '../../../../core/utils/widgets/custom_text_field.dart';

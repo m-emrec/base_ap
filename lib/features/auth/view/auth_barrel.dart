@@ -1,11 +1,10 @@
-export 'package:base_ap/core/extensions/media_query_extension.dart';
 export 'package:easy_localization/easy_localization.dart';
-
 export 'package:flutter_markdown/flutter_markdown.dart';
 export 'package:flutter_riverpod/flutter_riverpod.dart';
 export 'package:gap/gap.dart';
 export 'package:go_router/go_router.dart';
 
+export '/core/extensions/media_query_extension.dart';
 export '../../../config/localization/lang/locale_keys.g.dart';
 export '../../../config/routes/router.dart';
 export '../../../core/constants/app_paddings.dart';

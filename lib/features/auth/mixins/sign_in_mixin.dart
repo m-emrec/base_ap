@@ -1,10 +1,8 @@
 // ignore_for_file: public_member_api_docs
 
-import 'package:base_ap/core/utils/widgets/custom_toast.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:toastification/toastification.dart';
 
 import '../../../config/localization/lang/locale_keys.g.dart';
 import '../model/credentials.dart';

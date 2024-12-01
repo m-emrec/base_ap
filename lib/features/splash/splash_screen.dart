@@ -1,9 +1,10 @@
 import 'dart:async';
 
-import 'package:base_ap/core/constants/generated/assets.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
+
+import '/core/constants/generated/assets.gen.dart';
 
 ///
 class SplashScreen extends StatelessWidget {

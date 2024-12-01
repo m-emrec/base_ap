@@ -1,8 +1,8 @@
-import 'package:base_ap/core/constants/generated/assets.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:lottie/lottie.dart';
 
+import '/core/constants/generated/assets.gen.dart';
 import '../../../../core/extensions/context_extension.dart';
 import '../../../../core/utils/widgets/buttons/buttons_import.dart';
 import '../../providers/provider.dart';

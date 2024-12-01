@@ -1,9 +1,10 @@
-import 'package:base_ap/core/constants/generated/assets.gen.dart';
 import 'package:flutter/material.dart';
 
+import '/core/constants/generated/assets.gen.dart';
 import 'auth_barrel.dart';
-part 'widgets/terms_and_conditions.dart';
+
 part 'widgets/already_have_an_account.dart';
+part 'widgets/terms_and_conditions.dart';
 
 ///
 class SignUp extends ConsumerStatefulWidget {

@@ -1,5 +1,6 @@
-import 'package:base_ap/core/extensions/context_extension.dart';
 import 'package:flutter/material.dart';
+
+import '/core/extensions/context_extension.dart';
 
 /// The [MediaQueryExtension] class provides various media queries and screen
 /// size-related helper getters on [BuildContext].
