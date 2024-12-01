@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:base_ap/core/resources/data_state.dart';
 import 'package:base_ap/core/resources/error_manager.dart';
-import 'package:base_ap/logger.dart';
 import 'package:flutter/material.dart';
 import 'package:toastification/toastification.dart';
 

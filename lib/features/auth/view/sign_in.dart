@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../mixins/sign_in_mixin.dart';
 import 'auth_barrel.dart';
+part 'widgets/dont_have_account.dart';
 
 ///
 class SignIn extends ConsumerStatefulWidget {
@@ -51,33 +52,6 @@ class _SignInState extends ConsumerState<SignIn> with SignInMixin {
             const GoogleSignInButton(),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class _DontHaveAnAccount extends StatelessWidget {
-  const _DontHaveAnAccount();
-
-  static final String _dontHaveAnAccount =
-      tr(LocaleKeys.auth_signin_dontHaveAnAccount);
-  static final String _createOne = tr(LocaleKeys.auth_signin_createOne);
-  void onSignUpTapped(BuildContext context) {
-    context.goNamed(Routes.signUp.name);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Text.rich(
-      TextSpan(
-        text: _dontHaveAnAccount,
-        children: [
-          InlineTextButton(
-            context,
-            text: _createOne,
-            onTap: () => onSignUpTapped(context),
-          ),
-        ],
       ),
     );
   }
